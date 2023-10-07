@@ -7,7 +7,8 @@ function Alert(props) {
     };
 
   return (
-    props.alert && <div class={`alert alert-${props.alert.type} alert-dismissible fade show`} role="alert">
+    <div style={{height : '50px'}}>
+    {props.alert && <div class={`alert alert-${props.alert.type} alert-dismissible fade show`} role="alert">
       <strong>{capitalize(props.alert.type)}</strong>: {props.alert.msg}
       {/* <strong>{props.alert.type}</strong>: {props.alert.msg} */}
       <button
@@ -16,6 +17,7 @@ function Alert(props) {
         data-bs-dismiss="alert"
         aria-label="Close"
       ></button>
+    </div>}
     </div>
   );
 }
