@@ -46,10 +46,10 @@ function App() {
     <Switch>
     {/* /users --> Component 1
         /users/home --> Component 2 */}
-          <Route exact path="/about">
+          <Route exact path="/textutils/about">
             <About mode={mode} />
           </Route>
-          <Route exact path="/">
+          <Route exact path="/textutils">
             <TextForm showAlert={showAlert} heading="Try TextUtils - word counter, character counter, remove extra spaces" mode={mode}/>
           </Route>
     </Switch>
